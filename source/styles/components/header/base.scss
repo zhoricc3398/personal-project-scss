@@ -1,5 +1,28 @@
-.header {
-    width: 100%;
-    height: 200px;
-    background: red;
+* {
+    box-sizing: border-box;
+}
+
+div {
+
+    &.banner {
+        height: 425px;
+        background-color: #EEEEEE;
+
+        .nav {
+            width: 350px;
+            height: 100%;
+            background-color: #ED1C24;
+        }
+    }
+
+    &.bannercontrols {
+        height: 65px;
+        background-color: #DBDBDB;
+
+        .arrowbackground {
+            width: 60%;
+            height: 100%;
+            background-color: #111111;
+        }
+    }
 }
