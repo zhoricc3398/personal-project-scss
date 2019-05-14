@@ -1,28 +1,79 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-div {
+section {
+    padding-left: 14.3vw;
 
-    &.banner {
-        height: 425px;
-        background-color: #EEEEEE;
+    &.component1 {
 
-        .nav {
-            width: 350px;
-            height: 100%;
-            background-color: #ED1C24;
+        div {
+
+            &.mainbanner {
+
+                .info {
+                    display: flex;
+                    width: 100%;
+                    background-color: #EEEEEE;
+
+                    .nav {
+                        width: 350px;
+                        min-width: 100px;
+                        height: 425px;
+                        background-color: #ED1C24;
+                    }
+                }
+
+                .menuicon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 63px;
+                    height: 59px;
+                    background-color: #111111;
+                }
+            }
+
+            &.bannercontrols {
+                width: 100%;
+
+                .arrowbackground {
+                    height: 65px;
+                    background-color: #111111;
+                }
+            }
         }
     }
 
-    &.bannercontrols {
-        height: 65px;
-        background-color: #DBDBDB;
+    &.component2 {
+        display: flex;
 
-        .arrowbackground {
-            width: 60%;
-            height: 100%;
-            background-color: #111111;
+        div {
+
+            &.gallerypics {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                width: 350px;
+                height: 500px;
+                background-color: #898989;
+            }
+
+            &.overview {
+                width: 60vw;
+                height: 523px;
+                background-color: #FFFFFF;
+
+                .wrap {
+                    max-width: 600px;
+
+                    .description {
+                        display: flex;
+                    }
+                }
+            }
         }
     }
 }
