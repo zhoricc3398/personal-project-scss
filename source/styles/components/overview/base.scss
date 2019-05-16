@@ -1,0 +1,98 @@
+@import 'palette';
+
+.overview {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 521px;
+    background-color: $color-2;
+
+    div {
+
+        &.wrapper {
+            display: flex;
+            position: relative;
+            background-color: $color-1;
+
+            &::before {
+                content: ' ';
+                position: absolute;
+                left: 1002px;
+                width: 2000px;
+                height: 100%;
+                background-color: $color-1;
+            }
+
+            .gallerypics {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                width: 350px;
+                height: 100%;
+                background-color: $color-3;
+            }
+
+            .text {
+                color: $color-4;
+
+                .wrap {
+                    width: 600px;
+                    margin-top: 39px;
+                    margin-left: 48px;
+                    letter-spacing: -.5px;
+
+                    h1 {
+                        margin-bottom: 40px;
+                        font-size: 30px;
+                        font-weight: bold;
+                        line-height: 36px;
+                    }
+
+                    p {
+                        margin-bottom: 30px;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 20px;
+                        font-weight: 300;
+                        letter-spacing: 0;
+                        line-height: 30px;
+
+                        &.bottom {
+                            padding-right: 52px;
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 14px;
+                            font-weight: 300;
+                            letter-spacing: 0;
+                            line-height: 20px;
+                        }
+                    }
+
+                    .description {
+                        display: flex;
+
+                        p {
+                            width: 300px;
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 14px;
+                            font-weight: 300;
+                            letter-spacing: 0;
+                            line-height: 20px;
+
+                            &:first-of-type {
+                                width: 260px;
+                                margin-right: 34px;
+                            }
+
+                            &:last-of-type {
+                                width: 300px;
+                                padding-right: 1px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

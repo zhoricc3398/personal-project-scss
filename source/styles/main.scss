@@ -1,2 +1,7 @@
+@import 'reset';
+@import 'base';
 @import 'media-queries';
-@import 'components/header/index.scss';
+
+// Components
+@import 'components/info/index.scss';
+@import 'components/overview/index.scss'

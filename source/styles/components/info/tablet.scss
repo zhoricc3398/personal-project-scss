@@ -1,0 +1,30 @@
+.wrapper {
+    width: 690px;
+}
+
+.info {
+
+    .top {
+
+        .wrapper {
+
+            .nav {
+                width: 345px;
+            }
+        }
+    }
+
+    .bottom {
+
+        .wrapper {
+
+            &::before {
+                left: 0;
+            }
+
+            .control {
+                width: 115px;
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.wrapper {
+    width: 271px;
+}
+
+.info {
+
+    .top {
+        height: 425px;
+
+        .wrapper {
+
+            .nav {
+                position: relative;
+                width: 271px;
+
+                .exhibition {
+                    margin-bottom: 57px;
+
+                    .icon {
+                        width: 36px;
+                        height: 36px;
+                        margin-left: -6px;
+                        font-size: 26px;
+                    }
+
+                    h1 {
+                        font-size: 14px;
+                        letter-spacing: -.1px;
+                    }
+                }
+
+                .content {
+
+                    div {
+
+                        &.header {
+                            width: 200px;
+                        }
+
+                        &.paragraph {
+                            width: 200px;
+                        }
+
+                        &.admission {
+
+                            a {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &.footericons {
+                            left: 50%;
+                            transform: translateX(-50%);
+
+                            div {
+                                width: 44.5px;
+
+                                &:last-of-type {
+                                    width: 44.5px;
+                                    border-right: solid 1px #F69397;
+                                    border-bottom: solid 1px #F69397;
+                                }
+                            }
+                        }
+                    }
+
+                    .paragraph {
+
+                        p {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+
+            .menu {
+                position: absolute;
+                top: 14px;
+                right: 0;
+            }
+        }
+    }
+
+    .bottom {
+
+        .wrapper {
+
+            &::before {
+                left: -1000px;
+            }
+
+            .control {
+                display: none;
+            }
+        }
+    }
+}

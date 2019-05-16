@@ -1,0 +1,37 @@
+.wrapper {
+    width: 690px;
+}
+
+.overview {
+    background-color: #FFFFFF;
+
+    div {
+
+        &.wrapper {
+
+            .gallerypics {
+                display: none;
+
+                div {
+                    display: none;
+                }
+            }
+
+            .text {
+                left: 0;
+                width: 100%;
+
+                .wrap {
+
+                    p {
+                        margin-left: 1px;
+
+                        &.bottom {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
