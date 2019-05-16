@@ -1,8 +1,17 @@
+@import 'palette';
+
 .wrapper {
     width: 271px;
 }
 
 .info {
+
+    .background {
+
+        img {
+            height: 425px;
+        }
+    }
 
     .top {
         height: 425px;
@@ -12,6 +21,7 @@
             .nav {
                 position: relative;
                 width: 271px;
+                background-color: $color-9;
 
                 .exhibition {
                     margin-bottom: 57px;
@@ -33,18 +43,16 @@
 
                     div {
 
-                        &.header {
+                        &.textwrap {
                             width: 200px;
-                        }
 
-                        &.paragraph {
-                            width: 200px;
-                        }
+                            p {
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
 
-                        &.admission {
-
-                            a {
-                                font-size: 16px;
+                            &::after {
+                                width: 100%;
                             }
                         }
 
@@ -52,24 +60,20 @@
                             left: 50%;
                             transform: translateX(-50%);
 
-                            div {
+                            a {
                                 width: 44.5px;
 
                                 &:last-of-type {
                                     width: 44.5px;
-                                    border-right: solid 1px #F69397;
-                                    border-bottom: solid 1px #F69397;
+                                    border-right: solid 1px $color-8;
+                                    border-bottom: none;
                                 }
                             }
                         }
                     }
 
-                    .paragraph {
-
-                        p {
-                            font-size: 14px;
-                            line-height: 20px;
-                        }
+                    .admission {
+                        font-size: 16px;
                     }
                 }
             }

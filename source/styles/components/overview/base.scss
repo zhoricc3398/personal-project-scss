@@ -7,37 +7,40 @@
     align-items: center;
     justify-content: center;
     height: 521px;
+    overflow: hidden;
     background-color: $color-2;
 
     div {
 
         &.wrapper {
             display: flex;
-            position: relative;
-            background-color: $color-1;
-
-            &::before {
-                content: ' ';
-                position: absolute;
-                left: 1002px;
-                width: 2000px;
-                height: 100%;
-                background-color: $color-1;
-            }
 
             .gallerypics {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 1fr);
+                flex-shrink: 0;
                 width: 350px;
                 height: 100%;
                 background-color: $color-3;
             }
 
             .text {
+                position: relative;
+                width: 100%;
                 color: $color-4;
 
+                &::before {
+                    content: ' ';
+                    position: absolute;
+                    left: 0;
+                    width: 300%;
+                    height: 100%;
+                    background-color: $color-1;
+                }
+
                 .wrap {
+                    position: absolute;
                     width: 600px;
                     margin-top: 39px;
                     margin-left: 48px;
