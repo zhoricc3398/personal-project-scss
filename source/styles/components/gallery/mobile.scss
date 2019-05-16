@@ -1,75 +1,26 @@
-@import 'palette';
+.gallery {
+    padding: 40px 0 34px;
 
-.wrapper {
-    width: 271px;
-}
+    .wrapper {
+        grid-gap: 36px 0;
+        grid-template-columns: 271.21px;
+        grid-template-rows: auto 190.92px;
+        width: 271px;
 
-.overview {
-    background: $color-1;
-    text-align: center;
+        .image {
+            grid-column: 1;
+            height: 191px;
+        }
 
-    div {
+        h1 {
+            grid-row: 1 / 2;
+            transform: translate(1px, -2px);
+            font-size: 24px;
+            text-align: center;
+        }
 
-        &.wrapper {
-
-            &::before {
-                display: none;
-            }
-
-            .gallerypics {
-                display: none;
-            }
-
-            .text {
-                left: 0;
-                width: 100%;
-
-                .wrap {
-                    width: 271px;
-                    margin-top: 38px;
-                    margin-left: 0;
-
-                    h1 {
-                        margin-bottom: 22px;
-                        font-size: 24px;
-                        line-height: 28.8px;
-                    }
-
-                    p {
-                        font-size: 18px;
-                        line-height: 30px;
-
-                        &:first-of-type {
-                            margin-bottom: 23px;
-                            padding: 0 .1px;
-                        }
-
-                        &.bottom {
-                            padding-right: 0;
-                        }
-                    }
-
-                    .description {
-                        flex-direction: column;
-                        align-items: center;
-                        width: 100%;
-                        margin-bottom: -11px;
-
-                        p {
-
-                            &:first-child {
-                                width: 100%;
-                                margin-right: 0;
-                                margin-bottom: 14px;
-                            }
-
-                            &:last-child {
-                                width: 100%;
-                            }
-                        }
-                    }
-                }
-            }
+        .grid {
+            display: none;
         }
     }
 }

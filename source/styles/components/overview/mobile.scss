@@ -1,10 +1,11 @@
-@import 'palette';
+@import '../../palette';
 
 .wrapper {
     width: 271px;
 }
 
 .overview {
+    height: 602px;
     background: $color-1;
     text-align: center;
 

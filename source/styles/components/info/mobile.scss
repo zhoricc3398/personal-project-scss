@@ -1,4 +1,4 @@
-@import 'palette';
+@import '../../palette';
 
 .wrapper {
     width: 271px;
@@ -21,7 +21,7 @@
             .nav {
                 position: relative;
                 width: 271px;
-                background-color: $color-9;
+                background-color: $color-13;
 
                 .exhibition {
                     margin-bottom: 57px;
@@ -65,7 +65,7 @@
 
                                 &:last-of-type {
                                     width: 44.5px;
-                                    border-right: solid 1px $color-8;
+                                    border-right: solid 1px $color-12;
                                     border-bottom: none;
                                 }
                             }

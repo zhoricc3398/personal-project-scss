@@ -1,0 +1,52 @@
+.location {
+    height: 402px;
+
+    .wrapper {
+        width: 271px;
+
+        .direction {
+            width: 270.5px;
+            padding-top: 37px;
+            padding-left: 6px;
+
+            h1 {
+                margin-bottom: 96px;
+                font-size: 24px;
+                line-height: 28.8px;
+            }
+
+            p {
+                margin-bottom: 26px;
+                padding: 0 61px;
+                padding-right: 64px;
+                padding-bottom: 15px;
+                font-size: 14px;
+                line-height: 20px;
+
+                &::after {
+                    width: 191.67px;
+                }
+            }
+
+            a {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            .footericons {
+                margin-top: 16px;
+            }
+
+            &::after {
+                top: 90px;
+                left: 115px;
+                box-shadow: 0 0 0 2000px $color-13;
+            }
+
+            &::before {
+                top: 97px;
+                left: 124px;
+            }
+        }
+    }
+}

@@ -1,43 +1,28 @@
-@import 'palette';
+.gallery {
+    padding: 46px 0 52px;
 
-.wrapper {
-    width: 690px;
-}
+    .wrapper {
+        grid-gap: 23px 0;
+        grid-template-columns: 592px;
+        justify-content: center;
+        width: 690px;
 
-.overview {
-    background-color: $color-1;
+        .image {
+            grid-column: 1;
+            height: 295.91px;
+        }
 
-    div {
+        h1 {
+            grid-row: 1 / 2;
+            margin-left: 2px;
+            transform: translate(-4px, -2px);
+        }
 
-        &.wrapper {
-
-            &::before {
-                display: none;
-            }
-
-            .gallerypics {
-                display: none;
-
-                div {
-                    display: none;
-                }
-            }
-
-            .text {
-                left: 0;
-                width: 100%;
-
-                .wrap {
-
-                    p {
-                        margin-left: 1px;
-
-                        &.bottom {
-                            padding-right: 0;
-                        }
-                    }
-                }
-            }
+        .grid {
+            grid-gap: 21.4px 14px;
+            grid-template-columns: repeat(5, 1fr);
+            height: 100.9px;
+            overflow: hidden;
         }
     }
 }

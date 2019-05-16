@@ -1,0 +1,31 @@
+.location {
+
+    .wrapper {
+        width: 690px;
+
+        .direction {
+            width: 344.5px;
+            padding-top: 55px;
+            padding-left: 13px;
+
+            h1 {
+                margin-bottom: 82px;
+            }
+
+            p {
+                padding: 0 84px;
+                padding-bottom: 20px;
+            }
+
+            &::after {
+                top: 115px;
+                left: 155px;
+                box-shadow: 0 0 0 2000px $color-13;
+            }
+
+            &::before {
+                left: 165px;
+            }
+        }
+    }
+}

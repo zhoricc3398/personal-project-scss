@@ -1,8 +1,10 @@
 @import 'reset';
 @import 'base';
 @import 'media-queries';
+@import 'palette';
 
 // Components
 @import 'components/info/index.scss';
 @import 'components/overview/index.scss';
-// @import 'components/gallery/index.scss';
+@import 'components/gallery/index.scss';
+@import 'components/location/index.scss';
