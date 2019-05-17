@@ -1,9 +1,3 @@
-@import '../../palette';
-
-.wrapper {
-    width: 271px;
-}
-
 .overview {
     height: 602px;
     background: $color-1;
@@ -12,6 +6,7 @@
     div {
 
         &.wrapper {
+            width: 271px;
 
             &::before {
                 display: none;
@@ -28,10 +23,13 @@
                 .wrap {
                     width: 271px;
                     margin-top: 38px;
-                    margin-left: 0;
+                    margin-left: 1px;
+                    padding-top: 0;
+                    padding-left: 0;
 
                     h1 {
                         margin-bottom: 22px;
+                        margin-left: -4px;
                         font-size: 24px;
                         line-height: 28.8px;
                     }
@@ -51,10 +49,9 @@
                     }
 
                     .description {
-                        flex-direction: column;
-                        align-items: center;
                         width: 100%;
                         margin-bottom: -11px;
+                        column-count: 1;
 
                         p {
 
@@ -66,6 +63,7 @@
 
                             &:last-child {
                                 width: 100%;
+                                margin-left: -2px;
                             }
                         }
                     }

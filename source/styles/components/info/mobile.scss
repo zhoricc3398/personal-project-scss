@@ -1,9 +1,3 @@
-@import '../../palette';
-
-.wrapper {
-    width: 271px;
-}
-
 .info {
 
     .background {
@@ -17,6 +11,7 @@
         height: 425px;
 
         .wrapper {
+            width: 271px;
 
             .nav {
                 position: relative;
@@ -55,25 +50,25 @@
                                 width: 100%;
                             }
                         }
-
-                        &.footericons {
-                            left: 50%;
-                            transform: translateX(-50%);
-
-                            a {
-                                width: 44.5px;
-
-                                &:last-of-type {
-                                    width: 44.5px;
-                                    border-right: solid 1px $color-12;
-                                    border-bottom: none;
-                                }
-                            }
-                        }
                     }
 
                     .admission {
                         font-size: 16px;
+                    }
+                }
+
+                .footericons {
+                    left: 50%;
+                    transform: translateX(-49%);
+
+                    a {
+                        width: 44.5px;
+
+                        &:last-of-type {
+                            width: 44.5px;
+                            border-right: solid 1px $color-12;
+                            border-bottom: none;
+                        }
                     }
                 }
             }
@@ -89,6 +84,7 @@
     .bottom {
 
         .wrapper {
+            width: 271px;
 
             &::before {
                 left: -1000px;

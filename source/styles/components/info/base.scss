@@ -1,33 +1,8 @@
-@import '../../palette';
-
 .info {
     display: relative;
     width: 100%;
     height: 484px;
     background-color: $color-5;
-
-    .wrapper::before {
-        content: ' ';
-        position: absolute;
-        height: 100%;
-        background-color: $color-6;
-    }
-
-    .background {
-        position: absolute;
-        z-index: 1;
-
-        img {
-            display: none;
-            width: 100vw;
-            height: 422px;
-            object-fit: cover;
-
-            &.active {
-                display: block;
-            }
-        }
-    }
 
     .bottom {
         display: flex;
@@ -43,8 +18,12 @@
             justify-content: flex-end;
 
             &::before {
+                content: ' ';
+                position: absolute;
                 left: 350px;
                 width: 2000px;
+                height: 100%;
+                background-color: $color-6;
             }
 
             .control {
@@ -70,13 +49,13 @@
                     &.left {
 
                         &::before {
-                            content: url(../../../images/info/Left.png);
+                            content: url(/images/info/left.png);
                         }
 
                         &:hover {
 
                             &::before {
-                                content: url(../../../images/info/Lefthover.png);
+                                content: url(/images/info/lefthover.png);
                             }
                         }
                     }
@@ -84,13 +63,13 @@
                     &.right {
 
                         &::before {
-                            content: url(../../../images/info/Right.png);
+                            content: url(/images/info/right.png);
                         }
 
                         &:hover {
 
                             &::before {
-                                content: url(../../../images/info/Righthover.png);
+                                content: url(/images/info/righthover.png);
                             }
                         }
                     }
@@ -106,6 +85,18 @@
         align-items: center;
         justify-content: center;
         height: 422px;
+
+        img {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            &.active {
+                display: block;
+            }
+        }
 
         .wrapper {
             display: flex;
@@ -125,21 +116,18 @@
                     display: flex;
                     margin-bottom: 45px;
 
-                    .icon {
+                    &::before {
+                        content: 'E';
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        width: 45px;
-                        height: 45px;
+                        width: 38px;
+                        height: 38px;
                         border-width: 3px;
                         border-style: solid;
                         border-color: $color-9;
                         font-size: 32px;
                         font-weight: bold;
-
-                        &::before {
-                            content: 'E';
-                        }
                     }
 
                     h1 {
@@ -170,7 +158,6 @@
 
                         &.textwrap {
                             position: relative;
-                            width: 277px;
                             margin-bottom: 17px;
                             padding-bottom: 16px;
 
@@ -199,73 +186,11 @@
                         text-decoration: none;
                         text-transform: uppercase;
 
-                        div {
+                        &::before {
+                            content: url(/images/info/shape12.png);
                             margin-top: -2px;
                             margin-right: 8px;
                             margin-left: -3px;
-
-                            &::before {
-                                content: url(../../../images/info/Shape12.png);
-                            }
-                        }
-                    }
-
-                    .footericons {
-                        display: flex;
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-
-                        a {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 43.5px;
-                            height: 43px;
-                            border-top: 1px $color-12 solid;
-                            border-left: 1px $color-12 solid;
-
-                            &.eye {
-
-                                &::before {
-                                    content: url(../../../images/info/Eye.png);
-                                }
-
-                                &:hover {
-
-                                    &::before {
-                                        content: url(../../../images/info/Eyehover.png);
-                                    }
-                                }
-                            }
-
-                            &.image {
-
-                                &::before {
-                                    content: url(../../../images/info/Image.png);
-                                }
-
-                                &:hover {
-
-                                    &::before {
-                                        content: url(../../../images/info/Imagehover.png);
-                                    }
-                                }
-                            }
-
-                            &.marker {
-
-                                &::before {
-                                    content: url(../../../images/info/Marker.png);
-                                }
-
-                                &:hover {
-
-                                    &::before {
-                                        content: url(../../../images/info/Markerhover.png);
-                                    }
-                                }
-                            }
                         }
                     }
 
@@ -289,6 +214,58 @@
                         line-height: 20px;
                     }
                 }
+
+                .footericons {
+                    display: flex;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 43.5px;
+                        height: 43px;
+                        border-top: 1px $color-12 solid;
+                        border-left: 1px $color-12 solid;
+
+                        &.eye {
+
+                            &::before {
+                                content: url(/images/info/eye.png);
+                            }
+                        }
+
+                        &.image {
+
+                            &::before {
+                                content: url(/images/info/image.png);
+                            }
+                        }
+
+                        &.marker {
+
+                            &::before {
+                                content: url(/images/info/marker.png);
+                            }
+                        }
+
+                        &:hover {
+                            $map: ('eye': 'eyehover.png', 'image': 'imagehover.png', 'marker': 'markerhover.png');
+
+                            @each $class, $path in $map {
+
+                                &.#{$class} {
+
+                                    &::before {
+                                        content: url(/images/info/#{$path});
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             .menu {
@@ -300,7 +277,7 @@
                 background-color: $color-6;
 
                 &::before {
-                    content: url(../../../images/info/Iconcopy.png);
+                    content: url(/images/info/iconcopy.png);
                 }
             }
         }

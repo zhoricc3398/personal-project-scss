@@ -22,7 +22,10 @@
             grid-gap: 21.4px 14px;
             grid-template-columns: repeat(5, 1fr);
             height: 100.9px;
-            overflow: hidden;
+
+            figure:nth-child(n+6) {
+                display: none;
+            }
         }
     }
 }

@@ -1,5 +1,3 @@
-@import '../../palette';
-
 .location {
     display: flex;
     position: relative;
@@ -48,7 +46,8 @@
                 position: relative;
                 z-index: 1;
                 margin-bottom: 21px;
-                padding: 0 93px;
+                margin-left: -4px;
+                padding: 0 95px;
                 padding-bottom: 20px;
                 font-family: 'Open Sans', sans-serif;
                 font-size: 16px;
@@ -91,7 +90,7 @@
             }
 
             &::before {
-                content: url(../../../images/location/label.png);
+                content: url(/images/location/label.png);
                 position: absolute;
                 top: 122px;
                 left: 162px;
@@ -118,14 +117,7 @@
                         width: 47px;
 
                         &::before {
-                            content: url(../../../images/location/man.png);
-                        }
-
-                        &:hover {
-
-                            &::before {
-                                content: url(../../../images/location/manh.png);
-                            }
+                            content: url(/images/location/man.png);
                         }
                     }
 
@@ -133,14 +125,7 @@
                         width: 47px;
 
                         &::before {
-                            content: url(../../../images/location/Car.png);
-                        }
-
-                        &:hover {
-
-                            &::before {
-                                content: url(../../../images/location/Carh.png);
-                            }
+                            content: url(/images/location/car.png);
                         }
                     }
 
@@ -148,13 +133,20 @@
                         width: 45px;
 
                         &::before {
-                            content: url(../../../images/location/train.png);
+                            content: url(/images/location/train.png);
                         }
+                    }
 
-                        &:hover {
+                    &:hover {
+                        $map: ('man': 'manh.png', 'car': 'carh.png', 'train': 'trainh.png');
 
-                            &::before {
-                                content: url(../../../images/location/Trainh.png);
+                        @each $class, $path in $map {
+
+                            &.#{$class} {
+
+                                &::before {
+                                    content: url(/images/location/#{$path});
+                                }
                             }
                         }
                     }
