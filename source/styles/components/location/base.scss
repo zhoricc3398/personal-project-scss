@@ -115,6 +115,7 @@
 
                     &.man {
                         width: 47px;
+                        padding-right: 4px;
 
                         &::before {
                             content: url(/images/location/man.png);
@@ -138,11 +139,11 @@
                     }
 
                     &:hover {
-                        $map: ('man': 'manh.png', 'car': 'carh.png', 'train': 'trainh.png');
+                        $icon: ('man': 'manh.png', 'car': 'carh.png', 'train': 'trainh.png');
 
-                        @each $class, $path in $map {
+                        @each $hover, $path in $icon {
 
-                            &.#{$class} {
+                            &.#{$hover} {
 
                                 &::before {
                                     content: url(/images/location/#{$path});

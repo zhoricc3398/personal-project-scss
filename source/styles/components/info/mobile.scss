@@ -1,11 +1,5 @@
 .info {
-
-    .background {
-
-        img {
-            height: 425px;
-        }
-    }
+    height: 487px;
 
     .top {
         height: 425px;
@@ -20,15 +14,16 @@
 
                 .exhibition {
                     margin-bottom: 57px;
+                    margin-left: -6px;
 
-                    .icon {
-                        width: 36px;
-                        height: 36px;
-                        margin-left: -6px;
-                        font-size: 26px;
+                    &::before {
+                        width: 30px;
+                        height: 30px;
+                        font-size: 25.85px;
                     }
 
                     h1 {
+                        margin-left: 7px;
                         font-size: 14px;
                         letter-spacing: -.1px;
                     }

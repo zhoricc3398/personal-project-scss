@@ -27,9 +27,20 @@
 
                     p {
                         margin-left: 1px;
+                        padding-right: 6px;
 
                         &.bottom {
-                            padding-right: 0;
+                            padding-right: 55px;
+                        }
+                    }
+
+                    .description {
+
+                        p {
+
+                            &:last-of-type {
+                                margin-left: -42px;
+                            }
                         }
                     }
                 }
