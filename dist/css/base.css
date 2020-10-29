@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+.wrapper {
+  position: absolute;
+  width: 1003px;
+  height: 100%; }
